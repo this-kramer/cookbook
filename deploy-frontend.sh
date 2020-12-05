@@ -8,6 +8,5 @@ echo $SERVICE_API_IP
 echo $SERVICE_API_URL
 
 pushd recipe-frontend
-docker build 
-docker build --build-arg VUE_APP_API_URL=$SERVICE_API_URL -t thiskramerde/frontend .
+docker build --build-arg VUE_APP_API_URL=$SERVICE_API_URL -t $IMAGE_NAME .
 docker run -p 8080:80 $IMAGE_NAME & 
