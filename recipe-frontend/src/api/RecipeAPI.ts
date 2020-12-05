@@ -6,7 +6,7 @@ export default class RecipeAPI {
 
     constructor() {
         this._axios = axios.create({
-            baseURL: process.env.VUE_APP_API_BASE_URL,
+            baseURL: process.env.VUE_APP_API_URL,
             headers: {
                 "Accept": "*/*",
                 "Content-Type": "application/json;charset=UTF-8",

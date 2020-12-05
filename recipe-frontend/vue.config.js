@@ -1,1 +1,4 @@
-process.env.VUE_APP_API_BASE_URL = "http://192.168.0.42:8888";
+if (Object.prototype.hasOwnProperty.call(process.env, "VUE_APP_API_URL"))
+{
+    process.env.VUE_APP_API_URL = "http://localhost:8888";
+}
