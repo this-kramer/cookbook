@@ -11,7 +11,6 @@ export default class RecipeAPI {
                 "Accept": "*/*",
                 "Content-Type": "application/json;charset=UTF-8",
             },
-            withCredentials: true,
         });
     }
 
